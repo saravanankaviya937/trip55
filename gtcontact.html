@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+        margin: 0px;
+        padding: 0px ;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav{
+            width:1350px;
+            height: 75px;
+            display: flex;
+            background-color:lightblue;
+            position: sticky;
+            top:0;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+            padding: 0px 50px; 
+           }
+           .logo{
+            font-size: 25px;
+            font-weight: bold;
+           }
+           .gt{
+            width: 65%;
+            display: flex;
+            margin-bottom: 20px;
+            margin-left:  33%; 
+            justify-content: right; 
+            list-style: none;
+           }
+           .gt li{
+            margin-right: 15px;
+            margin-top: 20px;
+           }
+           .gt li a{
+            font-size: 19px;
+            text-decoration: darkgrey;
+            transition: 0.3s ease;
+            
+           }
+           .gt li a:hover{
+            color: black;
+        }
+        .search{
+            display: flex;
+            align-items: center;
+            margin-right: 0;
+        }
+        .search form{
+            display: flex;
+            margin: 0;
+        }
+        .search input{
+            padding:5px;
+            outline: none;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 2px;
+            font-size: 16px;
+        }
+       .search input:hover{
+           border: 1px solid lightyellow ;
+       }
+       .search button{
+           padding: 10px;
+           background-color: #ddd;
+           border: none;
+           border-radius: 5px;
+           color: #333;
+           font-size: 19px;
+           cursor: pointer;
+        }
+        .search button:hover{
+            background-color: beige;
+        }
+     .footer{
+        background: black;
+        padding-top: 50px;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+     }
+     .container{
+        width: 1150px;
+        margin: auto;         
+        display: flex;
+        justify-content: center;
+     }
+     .footer-container{
+         width: 34%;
+     }
+     h1{
+        font-size: xx-large;
+        margin-bottom: 15px;
+        text-align: center;
+     }
+     .footer-container p{
+        width: 150px;
+        margin: auto;
+        padding:7px;
+    }
+    .footer-container ul{
+        text-align: center;
+    }
+    .list{
+         padding: 0;
+        /* display: inline-block;  */
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type: none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content:"";
+        position: absolute;
+        transform: translate(-50% ,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background-color: orangered;
+        transition-duration: .5s;
+    }
+    list li:hover::before{
+        width: 70px;
+     }
+    .social-icons{
+        text-align: center;
+        padding:0;
+    }
+    .social-icons li{
+        display:inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-iconsn i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: darkorange;
+    }
+    .social-icons{
+        color: darkorange;
+    }
+    .button-bar {
+        background-color: lightblue;
+        text-align: center;
+        padding: 10px 0;
+        margin-top:50px;
+    }
+    .button-bar {
+        color: darkslategrey;
+        margin: 0;
+        font-size: 25px;
+        height: 60px;
+    }
+    a{
+        color:gray;
+    }   @media (max-width: 1350px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">EXPOLER'S.COM</div>
+       
+       <ul class="gt">
+         <li><img src="./icons8-home.svg" alt="" width="" height=""><a href="./gthome.html">Home</a></li>
+         <li><img src="./icons8-view-more-30.png" alt="" width="" height=""><a href="./gtview.html">ViewMore</a></li>
+         <li><img src="./icons8-ticket-30.png" alt="" width="" height=""><a href="./gt2booking.html">Book</a></li>
+         <!-- <li></li><img src="./icons8-packages-53.png" alt="" width="30px" height="30px"><a href="./packages.html">Packages</a></li>
+         <li><img src="./icons8-about.svg" alt="" width="25px" height="25px"><a href="./gtabout.html">About</a></li> -->
+         <li><img src="./icons8-contact-50.png" alt="" width="30px" height="30px"><a href="./gtcontact.html">Contact</a></li> 
+       </ul> 
+         <div class="search">
+           <form>
+             <input type="text" placeholder="search">
+             <button type="submit">Go</button>
+           </form>
+         </div>
+       </nav>
+   <center>
+        <img src="./triplogo.html" alt="" height="0.5%" width="100%">
+       <h2>INTERNATIONAL TRIPS ONLY</h2>
+   </center>
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-container">
+            <h1>About Us</h1>
+           <p>exploer.com is a full integrated travel company that offers comprehensive solutions for all the business and leisure travelers across the world.
+        </p>
+        </div>
+         <div class="footer-container">
+                <center><h1>Contact Us</h1></center>
+                <p>Email:expoler55@gmail.com</p>
+                <p>Phone:27266244763</p>
+                <p>Address:No:1,Gemini parsn,
+                    chennai-6006,Tamilnadu,India.</p>
+            </div>
+            <div class="footer-container">
+                <h1>Quik Links</h1>
+                <ul class="list">
+                    <li><a href="./gthome.html">Home</a></li>
+                    <li><a href="./gt2booking.html">Book</a></li>
+                    <li><a href="./gtview.html">ViewMore</a></li>
+                    <li><a href="./gtcontact.html">ContactUs</a></li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <h1>Follow Us</h1>
+                <ul class="social-icons">
+                <li><a herf=""><img src="./icons8-facebook (1).svg"></a></li>
+                <li><a herf=""><img src="./icons8-instagram.svg"></a></li> 
+                <li><a herf=""><img src="./icons8-twitter.svg"></a></li>
+                <li><a herf=""><img src="./icons8-whatsapp.svg"></a></li>
+            </ul> 
+            </div>
+        </div>
+        <div class="button-bar">
+            <p>EXPOLER'S.COM company @2019.All Rights Reserved.</p>
+        </div> 
+    </footer>
+</body>
+</html>
